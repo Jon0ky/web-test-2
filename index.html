@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Red magic Background Design</title>
+    <title>top raid</title>
     <style>
         * {
             box-sizing: border-box;
@@ -55,8 +55,8 @@
         }
         
         .cyan-image {
-            width: 100%;
-            height: 100%;
+            width: 90%;
+            height: 90%;
             max-width: 300px;
             max-height: 300px;
             object-fit: contain;
@@ -86,7 +86,7 @@
         .avatar-container {
             display: flex;
             align-items: center;
-            gap: 12px;
+            gap: 19px;
         }
         
         .avatar-wrapper {
@@ -97,27 +97,34 @@
         }
         
         .avatar-image {
-            width: 100%;
-            height: 100%;
+            width: 130%;
+            height: 130%;
             border-radius: 8px;
             object-fit: cover;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-45%, -50%);
         }
         
         .avatar-border {
             position: absolute;
             top: -3px;
             left: -3px;
-            width: calc(100% + 6px);
-            height: calc(100% + 6px);
-            border-radius: 10px;
+            width: calc(130% + 6px);
+            height: calc(130% + 6px);
             object-fit: cover;
             pointer-events: none;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-45%, -50%);
         }
         
         .user-info {
             display: flex;
             flex-direction: column;
-            gap: 8px;
+            gap: 17px;
             min-width: 0;
             flex: 1;
         }
@@ -146,7 +153,7 @@
             color: white;
             font-family: Arial, sans-serif;
             padding: 2px 6px;
-            border-radius: 3px;
+            border-radius: 2px;
             font-size: 11px;
             white-space: nowrap;
         }
@@ -190,16 +197,18 @@
         .damage-container {
             display: flex;
             align-items: center;
-            gap: 8px;
+            justify-content: space-between;
+            gap: 12px;
             background: rgba(0, 0, 0, 0.3);
-            padding: 8px 12px;
-            border-radius: 20px;
+            padding: 12px 18px;
+            border-radius: 25px;
             white-space: nowrap;
+            min-width: 180px;
         }
         
         .damage-icon {
-            width: 24px;
-            height: 24px;
+            width: 30px;
+            height: 23px;
             border-radius: 4px;
             flex-shrink: 0;
         }
@@ -209,6 +218,8 @@
             font-family: Arial, sans-serif;
             font-size: 14px;
             font-weight: bold;
+            text-align: right;
+            flex: 1;
         }
 
         /* Enhanced Mobile Styles */
@@ -216,7 +227,7 @@
             body {
                 padding: 10px;
                 gap: 8px;
-            }
+            }  
             
             .horizontal-bar {
                 width: 95%;
@@ -250,7 +261,7 @@
             }
             
             .avatar-container {
-                gap: 8px;
+                gap: 15px;
                 min-width: 0;
             }
             
@@ -260,7 +271,7 @@
             }
             
             .user-info {
-                gap: 4px;
+                gap: 8px;
                 min-width: 0;
             }
             
@@ -282,8 +293,10 @@
             }
             
             .damage-container {
-                padding: 4px 6px;
-                gap: 4px;
+                padding: 8px 12px;
+                gap: 8px;
+                min-width: 140px;
+                justify-content: space-between;
             }
             
             .damage-text {
@@ -294,6 +307,16 @@
                 width: 16px;
                 height: 16px;
             }
+
+            .cyan-image {
+            width: 85%;
+            height: 85%;
+            max-width: 300px;
+            max-height: 300px;
+            object-fit: contain;
+            border-radius: 8px;
+        }
+
         }
         
         @media (max-width: 480px) {
@@ -330,7 +353,7 @@
             }
             
             .avatar-container {
-                gap: 6px;
+                gap: 12px;
             }
             
             .avatar-wrapper {
@@ -339,7 +362,7 @@
             }
             
             .user-info {
-                gap: 7px;
+                gap: 8px;
             }
             
             .user-name {
@@ -360,9 +383,11 @@
             }
             
             .damage-container {
-                padding: 3px 5px;
-                gap: 3px;
-                border-radius: 12px;
+                padding: 6px 10px;
+                gap: 6px;
+                border-radius: 18px;
+                min-width: 120px;
+                justify-content: space-between;
             }
             
             .damage-text {
@@ -399,11 +424,11 @@
             }
 
             .user-info {
-                gap: 4px;
+                gap: 6px;
             }
             
             .user-name {
-                font-size: 9px;
+                font-size: 11px;
             }
             
             .level-badge {
@@ -412,11 +437,18 @@
             }
             
             .main-role, .member-role {
-                font-size: 8px;
+                font-size: 10px;
             }
             
             .entry-text {
                 font-size: 9px;
+            }
+            
+            .damage-container {
+                padding: 5px 8px;
+                gap: 5px;
+                min-width: 100px;
+                justify-content: space-between;
             }
             
             .damage-text {
@@ -427,6 +459,31 @@
                 width: 12px;
                 height: 12px;
             }
+
+            .avatar-image {
+            width: 120%;
+            height: 120%;
+            border-radius: 8px;
+            object-fit: cover;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-45%, -50%);
+            }
+
+            .avatar-border {
+            position: absolute;
+            top: -3px;
+            left: -3px;
+            width: calc(120% + 6px);
+            height: calc(120% + 6px);
+            object-fit: cover;
+            pointer-events: none;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-45%, -50%);
+            }
         }
     </style>
 </head>
@@ -434,7 +491,7 @@
     <!-- Rank 1 - Top damage with special image -->
     <div class="horizontal-bar">
         <div class="cyan-section">
-            <img src="Icon_Arena.webp" alt="Top 1 Special Icon" class="cyan-image">
+            <img src="top-1.png" alt="Top 1 Special Icon" class="cyan-image">
         </div>
         <div class="gray-section">
             <div class="left-content">
@@ -458,7 +515,7 @@
                     <span class="entry-text entry-total">/21</span>
                 </div>
                 <div class="damage-container">
-                    <img src="leadorchar-point-fflow.png" alt="Damage Icon" class="damage-icon">
+                    <img src="bar_chart_4_bars_24dp_54C8E6_FILL0_wght400_GRAD0_opsz24-cutout.svg" alt="Damage Icon" class="damage-icon">
                     <span class="damage-text">1,866,387,017</span>
                 </div>
             </div>
@@ -468,7 +525,7 @@
     <!-- Rank 2 - Second place with special image -->
     <div class="horizontal-bar">
         <div class="cyan-section">
-            <img src="Icon_Arena.webp" alt="Top 2 Special Icon" class="cyan-image">
+            <img src="top-2.png" alt="Top 2 Special Icon" class="cyan-image">
         </div>
         <div class="gray-section">
             <div class="left-content">
@@ -492,7 +549,7 @@
                     <span class="entry-text entry-total">/21</span>
                 </div>
                 <div class="damage-container">
-                    <img src="leadorchar-point-fflow.png" alt="Damage Icon" class="damage-icon">
+                    <img src="bar_chart_4_bars_24dp_54C8E6_FILL0_wght400_GRAD0_opsz24-cutout.svg" alt="Damage Icon" class="damage-icon">
                     <span class="damage-text">1,245,678,901</span>
                 </div>
             </div>
@@ -502,7 +559,7 @@
     <!-- Rank 3 - Third place with special image -->
     <div class="horizontal-bar">
         <div class="cyan-section">
-            <img src="Icon_Arena.webp" alt="Top 3 Special Icon" class="cyan-image">
+            <img src="top-3.png" alt="Top 3 Special Icon" class="cyan-image">
         </div>
         <div class="gray-section">
             <div class="left-content">
@@ -526,7 +583,7 @@
                     <span class="entry-text entry-total">/21</span>
                 </div>
                 <div class="damage-container">
-                    <img src="leadorchar-point-fflow.png" alt="Damage Icon" class="damage-icon">
+                    <img src="bar_chart_4_bars_24dp_54C8E6_FILL0_wght400_GRAD0_opsz24-cutout.svg" alt="Damage Icon" class="damage-icon">
                     <span class="damage-text">987,654,321</span>
                 </div>
             </div>
@@ -560,7 +617,7 @@
                     <span class="entry-text entry-total">/21</span>
                 </div>
                 <div class="damage-container">
-                    <img src="leadorchar-point-fflow.png" alt="Damage Icon" class="damage-icon">
+                    <img src="bar_chart_4_bars_24dp_54C8E6_FILL0_wght400_GRAD0_opsz24-cutout.svg" alt="Damage Icon" class="damage-icon">
                     <span class="damage-text">654,321,987</span>
                 </div>
             </div>
@@ -594,7 +651,7 @@
                     <span class="entry-text entry-total">/21</span>
                 </div>
                 <div class="damage-container">
-                    <img src="leadorchar-point-fflow.png" alt="Damage Icon" class="damage-icon">
+                    <img src="bar_chart_4_bars_24dp_54C8E6_FILL0_wght400_GRAD0_opsz24-cutout.svg" alt="Damage Icon" class="damage-icon">
                     <span class="damage-text">321,654,789</span>
                 </div>
             </div>
